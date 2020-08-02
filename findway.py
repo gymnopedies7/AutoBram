@@ -28,17 +28,30 @@ while 1:
 # 좌표리스트에 등록된 좌표 만큼 클릭하기
 
 position_dict = {"skwindow_change" : (1529,956),"moveskill" : (1755,732), 
-"north":(1673,507), "map" :(1708,188),"zoomout":(143,403),"dungeon":(380,248), }
+"north":(1673,507), "map" :(1708,188),"zoomout":(143,403),"dungeon":(380,248),
+"backryun":(1764,827) }
 
 def position_click(pos_dict):
-
+    pag.click(664,1065)
     counts = 0
     for i in pos_dict:
-        if counts =! 6:
+        if counts == 6 :
+            pag.press('space')
             pag.click(pos_dict[i])
             time.sleep(1)
-            count += 1
-    else :
-        
-        
+            counts += 1
+            print(counts)
+            print("yes")
+          
+        else :
+            pag.click(pos_dict[i])
+            time.sleep(1)
+            counts += 1
+            print(counts)
 
+#%%
+# 실행시켜보기
+
+position_click(position_dict)
+
+# %%
