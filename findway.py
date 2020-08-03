@@ -52,11 +52,25 @@ def position_click(pos_dict):
 #%%
 # 실행시켜보기
 
-position_click(position_dict)
+while True : 
+    position_click(position_dict)
+    if keyboard.is_pressed('F3'):
+        break
 
 # %%
+# RGB 값 얻기
 
-# this is test
-position_clicl(position_dict)
+def get_rgb():
+    while True :
+        if keyboard.is_pressed('F4'):
+            screen = ImageGrab.grab() # 화면캡쳐
+            print(screen.getpixel(pag.position()))
+        if keyboard.is_pressed('F3'):
+            break
 
-#dlkfjlaf
+# %%
+# RBG 값 얻기Test
+
+get_rgb()
+
+# %%
