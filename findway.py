@@ -55,3 +55,6 @@ def position_click(pos_dict):
 position_click(position_dict)
 
 # %%
+
+# this is test
+position_clicl(position_dict)
