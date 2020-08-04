@@ -3,6 +3,7 @@ import pyautogui as pag
 from PIL import ImageGrab
 import keyboard
 import time
+from python_imagesearch.imagesearch import *
 
 # %%
 # 좌표찾기
@@ -74,3 +75,4 @@ def get_rgb():
 get_rgb()
 
 # %%
+
